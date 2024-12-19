@@ -16,13 +16,13 @@ const Companies = () => {
 
         <div className="relative mt-9">
           <div
-            className="bg-green-300s h-20 relative z-20"
+            className="bg-green-300s h-20 relative z-20 max-[900px]:hidden"
             style={{
               background:
                 " linear-gradient(90deg, white 0%, transparent 16%, transparent 84%, white 100%)",
             }}
           ></div>
-          <div className="flex gap-28 absolute top-0 slider">
+          <div className="flex gap-28 absolute top-0 slider max-[900px]:hidden">
             {/* {images.map((src, index) => (
                 <img
                   key={index}
@@ -32,6 +32,16 @@ const Companies = () => {
                 />
               ))} */}
             {images.concat(images).map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt={`Slide ${index + 1}`}
+                className="w-[150px] h-auto"
+              />
+            ))}
+          </div>
+          <div className="borders flex justify-center gap-x-8 gap-y-6 flex-wrap min-[900px]:hidden">
+            {images.map((src, index) => (
               <img
                 key={index}
                 src={src}

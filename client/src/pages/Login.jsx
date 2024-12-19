@@ -2,18 +2,19 @@ import React from "react";
 import { FaFingerprint } from "react-icons/fa";
 import { IoArrowBack } from "react-icons/io5";
 import { LuMailSearch } from "react-icons/lu";
+import { Link } from "react-router";
 
 const Login = () => {
   return (
     <div
-      className="h-screen w-screen overflow-hidden flex p-8 gap-5"
+      className="h-screen w-screen overflow-hidden flex min-[900px]:p-2 min-[1150px]:p-8 gap-2 min-[1150px]:gap-5"
       style={{
         background: "rgb(255,242,254)",
         background:
           "linear-gradient(90deg, rgba(255,242,254,1) 0%, rgba(209,84,173,1) 97%)",
       }}
     >
-      <div className="bg-red-200s bg-white rounded-md basis-[35%] flex flex-col">
+      <div className="bg-red-200s bg-white rounded-md basis-[100%] min-[900px]:basis-[35%] flex-shrink-0 flex flex-col">
         <div className="bg-blue-200s basis-[26%] flex justify-center items-center">
           {/* <img src="./debounce-logo-2.png" alt="" className="w-64" /> */}
           <img src="./debounce-logo-pink.png" alt="" className="w-64" />
@@ -54,7 +55,12 @@ const Login = () => {
             <div className="w-full">
               <div>
                 <span>Password </span>-
-                <span className="text-[#ff0fe6]"> forget?</span>
+                <Link to={"/forget"}>
+                  <span className="text-[#ff0fe6] hover:underline">
+                    {" "}
+                    forget?
+                  </span>
+                </Link>
               </div>
               <input
                 type="text"
@@ -65,17 +71,21 @@ const Login = () => {
           </div>
 
           <div className="mt-5 pl-[76px] flex gap-5">
-            <button className="bg-[#ff0fe6] px-3 rounded-md text-white py-px">
-              Retrieve
+            <button className="bg-[#ff0fe6] hover:bg-pink-500 cursor-pointer px-3 rounded-md text-white py-px">
+              Sign in
             </button>
-            <p className="text-[#ff0fe6]">Login</p>
-            <p className="text-[#ff0fe6]">Register</p>
+            {/* <p className="text-[#ff0fe6]">Login</p> */}
+            <Link to={"/register"}>
+              <p className="text-[#ff0fe6]  hover:underline cursor-pointer">
+                Register a new account
+              </p>
+            </Link>
           </div>
         </div>
       </div>
 
       {/* 2nd div */}
-      <div className="bg-white rounded-md flex-1 p-8">
+      <div className="bg-white hidden min-[900px]:block rounded-md flex-1 p-8">
         <div className="borders h-full flex flex-col gap-5">
           <div className="bg-red-200 basis-[43%]">
             <img src="./email-banner.png" alt="" className="h-full w-full" />

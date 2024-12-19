@@ -10,7 +10,7 @@ const MainPage = () => {
       <Homepage />
 
       {/* footer */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

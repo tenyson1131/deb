@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import MainPage from "./pages/MainPage";
 import Forget from "./pages/Forget";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/forget" element={<Forget />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );

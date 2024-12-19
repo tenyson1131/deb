@@ -12,12 +12,12 @@ const Steps = () => {
   const [stepImg_activeIndex, setStepImg_activeIndex] = useState(0);
   return (
     <div className="bg-red-300s py-20">
-      <div className="px-36 text-center">
+      <div className="px-5 min-[700px]:px-20 min-[1200px]:px-36 text-center">
         <p className="text-5xl font-semibold">Simple Steps.</p>
 
-        <div className="flex gap-5 mt-16">
+        <div className="flex flex-col min-[900px]:flex-row gap-5 mt-16 max-[900px]:text-sm">
           <div
-            className={`hover:bg-[#fef4fe] w-[400px] p-5 cursor-pointer
+            className={`hover:bg-[#fef4fe] min-[900px]:w-[400px] p-5 cursor-pointer
             ${stepImg_activeIndex == 0 ? "bg-[#fef4fe]" : "bg-white"}
             `}
             onClick={() => setStepImg_activeIndex(0)}
@@ -30,7 +30,7 @@ const Steps = () => {
             </p>
           </div>
           <div
-            className={`hover:bg-[#fef4fe] w-[400px] p-5 cursor-pointer
+            className={`hover:bg-[#fef4fe]  min-[900px]:w-[400px] p-5 cursor-pointer
             ${stepImg_activeIndex == 1 ? "bg-[#fef4fe]" : "bg-white"}
             `}
             onClick={() => setStepImg_activeIndex(1)}
@@ -43,7 +43,7 @@ const Steps = () => {
             </p>
           </div>
           <div
-            className={`hover:bg-[#fef4fe] w-[400px] p-5 cursor-pointer
+            className={`hover:bg-[#fef4fe]  min-[900px]:w-[400px] p-5 cursor-pointer
             ${stepImg_activeIndex == 2 ? "bg-[#fef4fe]" : "bg-white"}
             `}
             onClick={() => setStepImg_activeIndex(2)}

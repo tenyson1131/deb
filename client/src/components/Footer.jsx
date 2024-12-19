@@ -4,7 +4,7 @@ import { CiGlobe } from "react-icons/ci";
 const Footer = () => {
   return (
     <div className="bg-black text-white">
-      <div className="px-36 py-10 flex justify-between">
+      <div className="px-8 min-[800px]:px-20 min-[1170px]:px-36 py-10 flex flex-col min-[800px]:flex-row justify-between">
         {/* 1 col */}
         <div className="borders">
           <div>
@@ -103,8 +103,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="px-36 border-t border-gray-600 py-4 flex justify-between">
-        <div className="flex items-center gap-4">
+      <div className="px-4 min-[800px]:px-14 min-[1170px]:px-36 border-t border-gray-600 py-4 flex min-[800px]:flex-row flex-col max-[800px]:gap-5 justify-between">
+        <div className="flex flex-col min-[980px]:flex-row items-start min-[980px]:items-center min-[980px]:gap-4">
           <img
             src="https://ik.imagekit.io/debounce/wp-content/uploads/2018/01/logo-white.png"
             alt=""

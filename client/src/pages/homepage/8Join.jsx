@@ -9,12 +9,12 @@ const Join = () => {
           "radial-gradient(circle, rgba(255,238,252,1) 0%, rgba(255,210,252,1) 58%, rgba(255,255,255,1) 100%)",
       }}
     >
-      <div className="px-36 flex flex-col items-center">
-        <p className="font-semibold text-4xl text-center w-[80%] leading-snug">
+      <div className=" min-[900px]:px-36 flex flex-col items-center">
+        <p className="font-semibold text-2xl min-[900px]:text-4xl text-center w-[80%] leading-snug">
           Join the world's larget company that rely on EmailChcker to protect
           their sender reputation.
         </p>
-        <p className="mt-6 text-gray-500 text-center w-[620px]">
+        <p className="mt-6 text-gray-500 text-center max-[900px]:text-xs px-5 min-[900px]:w-[625px]">
           Sign up and get 100 free credits, as well as the opportunity to test
           our list cleaning and API capabilities.
         </p>

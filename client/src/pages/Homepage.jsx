@@ -44,7 +44,7 @@ const Homepage = () => {
       <Section1 />
 
       {/* section -2 */}
-      {/* <Companies /> */}
+      <Companies />
 
       {/* section -3 */}
       <Working />
@@ -94,10 +94,10 @@ const Homepage = () => {
       <Platforms />
 
       {/* section -7 */}
-      {/* <Steps /> */}
+      <Steps />
 
       {/* section -8 */}
-      {/* <Join /> */}
+      <Join />
     </div>
   );
 };
